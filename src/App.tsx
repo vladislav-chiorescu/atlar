@@ -1,25 +1,24 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { HelmetProvider } from 'react-helmet-async'
+import { BrowserRouter } from 'react-router-dom'
+import { ThemeProvider } from '@mui/material'
+
+import { ScrollToTop } from './components/scroll-to-top'
+import { Router } from './routes'
+import { theme } from './theme'
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.StrictMode>
+      <HelmetProvider>
+        <BrowserRouter>
+          <ThemeProvider theme={theme}>
+            <ScrollToTop />
+            <Router />
+          </ThemeProvider>
+        </BrowserRouter>
+      </HelmetProvider>
+    </React.StrictMode>
   )
 }
 
