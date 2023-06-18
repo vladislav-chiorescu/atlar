@@ -1,46 +1,114 @@
-# Getting Started with Create React App
+# Atlar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using `create-react-app` and includes the following libraries and tools: `yarn`, `react-router`, `eslint` + `prettier`, `material-ui`, `husky`, `emotion`, and `react-helmet-async`. The project utilizes `useMemo` and `useCallback` hooks to memoize functions and variables, which is considered a must.
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This project is a small app which contains two pages. Most of the app utilizes Material UI. It was bootstrapped with `create-react-app`, providing a foundation for building a React application. The project incorporates various libraries and tools to enhance the development experience and add functionality to the application.
 
-### `yarn start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Accounts List
+- Transactions List
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `yarn test`
+1. Clone the repository: `git clone https://github.com/vladislav-chiorescu/atlar.git`
+2. Navigate to the project directory: `cd atlar`
+3. Install dependencies: `yarn install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `yarn build`
+To start the development server, run the following command:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will launch the application in development mode and open it in your default browser. The page will automatically reload if you make any changes to the source code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `yarn eject`
+The project relies on the following dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `@emotion/react`: ^11.11.1
+- `@emotion/styled`: ^11.11.0
+- `@fontsource/roboto`: ^5.0.3
+- `@mui/icons-material`: ^5.11.16
+- `@mui/material`: ^5.13.5
+- `@testing-library/jest-dom`: ^5.14.1
+- `@testing-library/react`: ^13.0.0
+- `@testing-library/user-event`: ^13.2.1
+- `@types/jest`: ^27.0.1
+- `@types/node`: ^16.7.13
+- `@types/react`: ^18.0.0
+- `@types/react-dom`: ^18.0.0
+- `react`: ^18.2.0
+- `react-dom`: ^18.2.0
+- `react-helmet-async`: ^1.3.0
+- `react-router-dom`: ^6.13.0
+- `react-scripts`: 5.0.1
+- `typescript`: ^4.4.2
+- `web-vitals`: ^2.1.0
+- `@babel/plugin-proposal-private-property-in-object`: ^7.21.11
+- `@faker-js/faker`: ^8.0.2
+- `husky`: ^8.0.3
+- `lint-staged`: ^13.2.2
+- `prettier`: 2.8.8
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Development Tools
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The project includes the following development tools:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `eslint`: A pluggable JavaScript linter that enforces code quality and consistency.
+- `prettier`: An opinionated code formatter that helps maintain consistent code style.
+- `husky`: A Git hook manager that enables running scripts before committing or pushing code.
+- `react-helmet-async`: A library for managing document head tags such as title, meta, and more in a React application.
 
-## Learn More
+## File Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```plaintext
+├── public
+│   ├── index.html
+│   ├── manifest.json
+│   └── ...
+├── src
+│   ├── _mock
+│   │   ├── mockFunc1.ts
+│   │   ├── mockFunc2.ts
+│   │   └── ...
+│   ├── components
+│   │   ├── Component1.tsx
+│   │   ├── Component2.tsx
+│   │   └── ...
+│   ├── layout
+│   │   ├── index.tsx
+│   │   ├── Layout.tsx
+│   │   └── ...
+│   ├── pages
+│   │   ├── Page1.tsx
+│   │   ├── Page2.tsx
+│   │   └── ...
+│   ├── theme
+│   │   ├── index.tsx
+│   ├── utils
+│   │   ├── index.ts
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── routes.tsx
+│   └── ...
+├── .gitignore
+├── .prettierignore
+├── .prettierrc.json
+├── package.json
+├── yarn.lock
+└── ...
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
